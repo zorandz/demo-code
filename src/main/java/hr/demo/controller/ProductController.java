@@ -68,7 +68,6 @@ public class ProductController {
      *
      * @param product The product to be added.
      * @return A response entity containing the newly created product.
-     * @throws DisallowedPriceException If the price of the product is negative.
      */
     @PostMapping("/add-product")
     public ResponseEntity<ProductDTO> createProduct(@RequestBody @Valid ProductDTO productDTO) throws JsonProcessingException {
